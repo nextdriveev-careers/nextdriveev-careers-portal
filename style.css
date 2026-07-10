@@ -317,3 +317,83 @@ margin-top:20px;
 .search-box input:focus{
     box-shadow:0 0 15px rgba(0,123,255,.4);
   }
+
+/* ===========================
+   APPLICATION FORM
+=========================== */
+
+.application-form{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.application-form h2{
+    text-align:center;
+    color:#0d2b6b;
+    margin-bottom:25px;
+}
+
+.application-form label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea{
+
+    width:100%;
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+}
+
+.application-form textarea{
+    height:140px;
+    resize:vertical;
+}
+
+.application-form button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:16px;
+
+    background:#00C853;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.application-form button:hover{
+
+    background:#009624;
+
+  }
+  
