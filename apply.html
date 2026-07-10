@@ -1,93 +1,73 @@
-<form action="#" method="post">
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>Internship Application Form</h2>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<label>Full Name *</label>
-<input type="text" name="fullname" required>
+<title>Apply | NextDrive EV</title>
 
-<label>ID / Passport Number *</label>
-<input type="text" name="idnumber" required>
+<link rel="stylesheet" href="style.css">
 
-<label>Date of Birth *</label>
-<input type="date" name="dob" required>
+</head>
 
-<label>Gender *</label>
-<select required>
-<option value="">Select</option>
-<option>Male</option>
-<option>Female</option>
-<option>Prefer not to say</option>
-</select>
+<body>
 
-<label>Email Address *</label>
-<input type="email" required>
+<header>
 
-<label>Phone Number *</label>
-<input type="tel" required>
+<h1>NextDrive EV</h1>
 
-<label>Residential Address *</label>
-<textarea required></textarea>
+<h2>Internship Application</h2>
 
-<label>Province *</label>
-<select required>
-<option value="">Select Province</option>
-<option>Gauteng</option>
-<option>Limpopo</option>
-<option>Mpumalanga</option>
-<option>North West</option>
-<option>Free State</option>
-<option>KwaZulu-Natal</option>
-<option>Western Cape</option>
-<option>Eastern Cape</option>
-<option>Northern Cape</option>
-</select>
+</header>
 
-<label>Highest Qualification *</label>
-<select required>
-<option value="">Select</option>
-<option>Matric</option>
-<option>Certificate</option>
-<option>Diploma</option>
-<option>Degree</option>
-<option>Postgraduate</option>
-</select>
+<section class="application-form">
 
-<label>Field of Study *</label>
-<input type="text" required>
+<h2>Apply Today</h2>
 
-<label>Internship Department *</label>
-<select required>
-<option value="">Choose Department</option>
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name">
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Phone Number</label>
+<input type="tel" placeholder="+27">
+
+<label>Select Internship</label>
+
+<select>
+
 <option>Engineering</option>
-<option>Business Development</option>
-<option>Marketing</option>
-<option>Finance</option>
-<option>Human Resources</option>
+
 <option>Information Technology</option>
-<option>Logistics</option>
-<option>Sales</option>
-<option>Customer Support</option>
+
+<option>Marketing</option>
+
 </select>
 
-<label>Upload CV *</label>
-<input type="file" accept=".pdf,.doc,.docx" required>
+<label>Highest Qualification</label>
 
-<label>Upload ID *</label>
-<input type="file" accept=".pdf,.jpg,.png" required>
+<input type="text" placeholder="Diploma / Degree">
 
-<label>Upload Qualification *</label>
-<input type="file" accept=".pdf,.jpg,.png" required>
+<label>Upload CV</label>
 
-<label>Motivation *</label>
-<textarea rows="6" required></textarea>
+<input type="file">
 
-<label>
-<input type="checkbox" required>
-I confirm that all information provided is true and accurate.
-</label>
+<label>Motivation</label>
 
-<br><br>
+<textarea placeholder="Tell us why you want to join NextDrive EV"></textarea>
 
-<button type="submit">Submit Application</button>
+<button type="submit">
+Submit Application
+</button>
 
-  </form>
+</form>
+
+</section>
+
+</body>
+
+</html>
