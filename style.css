@@ -269,3 +269,32 @@ margin-top:20px;
 .apply-btn:hover{
     background:#00a844;
   }
+/* Search Box */
+
+.search-box{
+    width:90%;
+    margin:25px auto;
+}
+
+.search-box input{
+    width:100%;
+    padding:16px 20px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    outline:none;
+
+    box-sizing:border-box;
+}
+
+.search-box input:focus{
+    box-shadow:0 0 15px rgba(0,123,255,.4);
+  }
