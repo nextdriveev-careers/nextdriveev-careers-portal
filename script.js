@@ -67,3 +67,36 @@ if (registerForm) {
     });
 
 }
+
+// Login User
+
+const loginForm = document.getElementById("loginForm");
+
+if (loginForm) {
+
+    loginForm.addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        const email = document.getElementById("loginEmail").value;
+        const password = document.getElementById("loginPassword").value;
+
+        const user = JSON.parse(localStorage.getItem(email));
+
+        if (user && user.password === password) {
+
+            alert("✅ Login Successful. Welcome " + user.fullname + "!");
+
+            localStorage.setItem("loggedInUser", user.fullname);
+
+            window.location.href = "apply.html";
+
+        } else {
+
+            alert("❌ Incorrect email or password.");
+
+        }
+
+    });
+
+                  }
