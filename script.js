@@ -38,3 +38,32 @@ function searchJobs() {
     });
 
 }
+
+// Register New User
+const registerForm = document.getElementById("registerForm");
+
+if (registerForm) {
+
+    registerForm.addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        const fullname = document.getElementById("fullname").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const user = {
+            fullname,
+            email,
+            password
+        };
+
+        localStorage.setItem(email, JSON.stringify(user));
+
+        alert("🎉 Account created successfully!");
+
+        window.location.href = "login.html";
+
+    });
+
+}
