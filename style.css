@@ -216,3 +216,56 @@ margin-top:20px;
 }
 
   }
+
+/* Internship Page */
+
+.jobs{
+    padding:40px 20px;
+    background:#f5f7fb;
+}
+
+.jobs h2{
+    text-align:center;
+    color:#0b4ea2;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.job-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.job-card:hover{
+    transform:translateY(-5px);
+}
+
+.job-card h3{
+    color:#0b4ea2;
+    margin-bottom:15px;
+}
+
+.job-card p{
+    color:#555;
+    margin:8px 0;
+    font-size:17px;
+}
+
+.apply-btn{
+    display:inline-block;
+    background:#00c853;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.apply-btn:hover{
+    background:#00a844;
+  }
