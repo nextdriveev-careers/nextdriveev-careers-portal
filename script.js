@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("applicationForm");
 
-    if (form) {
+    if(form){
 
-        form.addEventListener("submit", function(e) {
+        form.addEventListener("submit", function(e){
 
             e.preventDefault();
 
@@ -17,86 +17,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-
-// Internship Search Function
-function searchJobs() {
-
-    let input = document.getElementById("searchInput").value.toLowerCase();
-
-    let jobs = document.querySelectorAll(".job-card");
-
-    jobs.forEach(function(job) {
-
-        let text = job.textContent.toLowerCase();
-
-        if (text.includes(input)) {
-            job.style.display = "block";
-        } else {
-            job.style.display = "none";
-        }
-
-    });
-
-}
-
-// Register New User
-const registerForm = document.getElementById("registerForm");
-
-if (registerForm) {
-
-    registerForm.addEventListener("submit", function(e) {
-
-        e.preventDefault();
-
-        const fullname = document.getElementById("fullname").value;
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-
-        const user = {
-            fullname,
-            email,
-            password
-        };
-
-        localStorage.setItem(email, JSON.stringify(user));
-
-        alert("🎉 Account created successfully!");
-
-        window.location.href = "login.html";
-
-    });
-
-}
-
-// Login User
-
-const loginForm = document.getElementById("loginForm");
-
-if (loginForm) {
-
-    loginForm.addEventListener("submit", function(e) {
-
-        e.preventDefault();
-
-        const email = document.getElementById("loginEmail").value;
-        const password = document.getElementById("loginPassword").value;
-
-        const user = JSON.parse(localStorage.getItem(email));
-
-        if (user && user.password === password) {
-
-            alert("✅ Login Successful. Welcome " + user.fullname + "!");
-
-            localStorage.setItem("loggedInUser", user.fullname);
-
-            window.location.href = "apply.html";
-
-        } else {
-
-            alert("❌ Incorrect email or password.");
-
-        }
-
-    });
-
-                  }
